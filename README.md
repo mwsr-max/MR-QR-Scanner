@@ -12,10 +12,12 @@ Click the link below to get the latest stable, battery-optimized version:
 
 ## 🛠️ Features
 
+* **🗂️ Multiple API Profiles (New in v1.1):** Save, label, and manage different Google Sheets database destinations under descriptive names (e.g., *"Main Office"*, *"Warehouse B"*). Perfect for multi-location tracking.
+* **⚡ Seamless Switching (New in v1.1):** Jump between saved profiles instantly using a quick-access dropdown (Spinner) menu on the Settings screen, auto-filling configuration endpoints.
+* **💾 Dynamic CRUD Profile Controls (New in v1.1):** Rename, update existing configurations, or tap `SAVE AS NEW` to instantiate fresh tracking lines instantly. Includes deletion confirmation protection.
 * **Smart Log Validation:** Prevents accidental double-scanning by checking the database history in real-time. If a user attempts to scan the exact same QR code twice within the same day, the second scan is blocked, and the app instantly informs them with a clear toast notification: `"ALREADY LOGGED TIME IN/OUT TODAY"`.
 * **Camera Power Management:** Built-in manual shutdown button and automatic lifecycle tracking to disable the camera when changing tabs, saving crucial battery life.
 * **Local History Log:** Dark-mode text optimized, high-contrast, scrollable history list with an option to clear all entries or export to a local CSV file.
-* **Seamless Google Sheets Integration:** Automatically routes scan records to matching sheets/tabs ("TIME IN" or "TIME OUT") dynamically.
 
 ---
 
@@ -74,15 +76,16 @@ function doPost(e) {
 7. Once successfully deployed, a window will display a **Web app URL**. Copy this URL link (it should end in `/exec`).
 
 ### 4. Link the URL to Your App Settings
-To activate the cloud synchronization feature, you must save your deployment link inside the application's configuration dashboard:
+To activate cloud synchronization, save your deployment links inside the application profile dashboard:
 
 1. Open **MR. QR Scanner** on your Android device.
 2. Navigate over to the **Settings** tab via the bottom navigation bar.
 3. Paste your copied Google Web App URL into the text box labeled **Google Sheets URL**.
-4. (Optional) Provide your active tracking profile ID in the **Username/User ID** section if required.
-5. Tap the **SAVE SETTINGS** button.
+4. Give it a distinct profile label (e.g., "Headquarters Office") and click SAVE AS NEW.
+5. Switch profiles anytime via the dropdown menu to route tracking entries to completely separate workspace spreadsheet logs instantly!
 
 The app will instantly lock this URL configuration in place. Background sync workers will now automatically route your time log metrics straight to your specific spreadsheet file whenever an active internet connection is detected!
+
 
 ---
 
