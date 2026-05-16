@@ -6,7 +6,7 @@ A battery-optimized, high-performance QR code scanner built for office environme
 
 Click the link below to get the latest stable, battery-optimized version:
 
-* **[Download MR. QR Scanner APK](https://github.com/mwsr-max/MR-QR-Scanner/releases/download/v1.0/MR_QR_Scanner_v1.0.apk)**
+* **[Download MR. QR Scanner APK](https://github.com/mwsr-max/MR-QR-Scanner/releases/download/v1.0/MR_QR_Scanner_v1.1.apk)**
 
 ---
 
